@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>戒菸支持網站</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 現代化界面設計 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        .info-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .info-item ul {
+            padding-left: 20px;
+        }
+
+        .info-item ul li {
+            margin-bottom: 10px;
+        }
+
+        /* 聊天機器人區域 */
+        .chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+        }
+
+        .chatbot-header {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .question-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .question-item {
+            background-color: #f0f0f0;
+            margin: 10px 0;
+            padding: 12px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .question-item:hover {
+            background-color: #d9f7d9;
+        }
+
+        .answer-box {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e6f7ff;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>戒菸支持網站</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#info">戒菸資訊</a></li>
+                <li><a href="#resources">資源下載</a></li>
+                <li><a href="#experts">專家諮詢</a></li>
+                <li><a href="#community">社群支持</a></li>
+                <li><a href="#blog">最新文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 首頁 -->
+        <section id="home">
+            <h2>歡迎來到戒菸支持網站</h2>
+            <p>提供專業資訊、資源下載及專家諮詢，助你順利戒菸。</p>
+        </section>
+
+        <!-- 戒菸資訊 -->
+        <section id="info">
+            <h2>戒菸資訊</h2>
+            <div class="info-item">
+                <h3>戒菸的好處</h3>
+                <ul>
+                    <li><strong>提高心肺功能</strong></li>
+                    <li><strong>減少癌症風險</strong></li>
+                    <li><strong>改善皮膚狀況</strong></li>
+                    <li><strong>節省開支</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 資源下載 -->
+        <section id="resources">
+            <h2>資源下載</h2>
+            <ul>
+                <li><a href="resources/戒菸日記.pdf" download>戒菸日記模板</a></li>
+                <li><a href="resources/戒菸行動計劃.pdf" download>戒菸行動計劃模板</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 聊天機器人 -->
+    <div class="chatbot">
+        <div class="chatbot-header">戒菸助手</div>
+        <ul class="question-list">
+            <li class="question-item" onclick="showAnswer(1)">1. 戒菸有什麼好處？</li>
+            <li class="question-item" onclick="showAnswer(2)">2. 如何成功戒菸？</li>
+            <li class="question-item" onclick="showAnswer(3)">3. 電子菸的危害是什麼？</li>
+            <li class="question-item" onclick="showAnswer(4)">4. 戒菸時常見的挑戰有哪些？</li>
+            <li class="question-item" onclick="showAnswer(5)">5. 有哪些有效的戒菸方法？</li>
+            <li class="question-item" onclick="showAnswer(6)">6. 怎樣找到戒菸支援資源？</li>
+            <li class="question-item" onclick="showAnswer(7)">7. 戒菸後會有哪些健康改善？</li>
+            <li class="question-item" onclick="showAnswer(8)">8. 如何維持戒菸的動力？</li>
+        </ul>
+
+        <div class="answer-box" id="answer-1">
+            <p>戒菸有很多健康好處，包括改善心肺功能，降低癌症風險，改善皮膚狀況等。</p>
+        </div>
+        <div class="answer-box" id="answer-2">
+            <p>成功戒菸需要決心、計劃和支持，常見方法包括冷火雞法、逐步減量法和藥物輔助法。</p>
+        </div>
+        <div class="answer-box" id="answer-3">
+            <p>電子菸雖然可能較少有害，但仍然含有尼古丁，並可能對心肺造成影響。</p>
+        </div>
+        <div class="answer-box" id="answer-4">
+            <p>戒菸時會面臨一些挑戰，例如戒斷症狀、情緒波動等，但可以通過合適的策略克服。</p>
+        </div>
+        <div class="answer-box" id="answer-5">
+            <p>戒菸的方法有很多，選擇最適合自己的方式很重要，可以參考醫生建議或戒菸支持小組。</p>
+        </div>
+        <div class="answer-box" id="answer-6">
+            <p>可以通過查詢線上資源或聯繫專業機構來獲取戒菸的支持。</p>
+        </div>
+        <div class="answer-box" id="answer-7">
+            <p>戒菸後，健康會有顯著改善，例如呼吸變得更順暢，心臟和肺部健康得到提升。</p>
+        </div>
+        <div class="answer-box" id="answer-8">
+            <p>維持戒菸動力的關鍵是設定目標、記錄進展並獲得支持。</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 戒菸支持網站. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 控制點選問題顯示答案
+        function showAnswer(id) {
+            const answerBoxes = document.querySelectorAll('.answer-box');
+            answerBoxes.forEach(box => {
+                box.style.display = 'none';
+            });
+            document.getElementById('answer-' + id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

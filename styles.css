@@ -1,0 +1,312 @@
+/* 重設預設樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 調整圖片大小並置中 */
+.home-image {
+    max-width: 40%; /* 控制圖片最大寬度為 80% */
+    height: auto;   /* 保持圖片的比例 */
+    display: block; /* 使圖片成為區塊元素 */
+    margin: 20px auto; /* 使圖片居中並在上下留一些間距 */
+}
+
+
+
+/* 基本的 body 樣式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1; /* 淺灰色背景 */
+    color: #333; /* 深灰色文字 */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 頁首與導航列樣式 */
+header {
+    background-color: #003366; /* 深藍色背景 */
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* 白色文字 */
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 主內容區域 */
+main {
+    padding: 30px 20px;
+}
+
+
+
+
+/* 首頁區塊 */
+#home {
+    background-color: #ffffff; /* 白色背景 */
+    padding: 40px 30px; /* 上下增加邊距 */
+    margin: 20px auto; /* 上下增加邊距並居中 */
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 更強的陰影 */
+    border: 2px solid #003366; /* 深藍色邊框 */
+}
+
+#home h1 {
+    font-size: 2.5em;
+    color: #003366; /* 深藍色標題 */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+	
+}
+
+#home p {
+    font-size: 1.2em;
+    text-align: center;
+    color: #555;
+}
+
+/* 資訊區塊 */
+#info {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 更強的陰影 */
+    border: 2px solid #003366; /* 深藍色邊框 */
+}
+
+#info h2 {
+    color: #003366;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info-item {
+    margin-bottom: 25px;
+}
+
+.info-item h3 {
+    color: #003366;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+/* 資源區塊 */
+#resources {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 更強的陰影 */
+    border: 2px solid #003366; /* 深藍色邊框 */
+}
+
+#resources h2 {
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#resources ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#resources ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#resources a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#resources a:hover {
+    text-decoration: underline;
+}
+
+/* 專家聯繫表單區塊 */
+#experts {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 更強的陰影 */
+    border: 2px solid #003366; /* 深藍色邊框 */
+}
+
+#experts h2 {
+    font-size: 2em;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #003366;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+form input[type="submit"] {
+    background-color: #003366;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #004c99;
+}
+
+/* 社群支持區塊 */
+#community {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 更強的陰影 */
+    border: 2px solid #003366; /* 深藍色邊框 */
+}
+
+#community h2 {
+    font-size: 2em;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.forum ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+.forum ul li {
+    margin-bottom: 15px;
+}
+
+.forum a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forum a:hover {
+    text-decoration: underline;
+}
+
+/* 部落格區塊 */
+#blog {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 更強的陰影 */
+    border: 2px solid #003366; /* 深藍色邊框 */
+}
+
+#blog h2 {
+    font-size: 2em;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-post h3 {
+    font-size: 1.5em;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.blog-post a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+/* 頁尾區塊 */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1em;
+}
